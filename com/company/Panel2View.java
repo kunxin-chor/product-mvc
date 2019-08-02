@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionListener;
 
 public class Panel2View {
-    public Panel2View(JFrame parentFrame, ActionListener onButtonClicked) {
+    public Panel2View(JFrame parentFrame) {
 
         // Setup size and etc.
         JPanel page1 = new JPanel();

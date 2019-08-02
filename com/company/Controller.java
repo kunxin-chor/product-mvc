@@ -28,4 +28,12 @@ public class Controller {
     }
 
 
+    public void setSelectedProduct(Product selectedItem) {
+        model.setSelectedProduct(selectedItem);
+    }
+
+    public Product getSelectedProduct()
+    {
+        return model.getSelectedProduct();
+    }
 }

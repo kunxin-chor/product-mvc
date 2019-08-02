@@ -12,7 +12,7 @@ public class Data {
         products.add(new Product("Wireless Keyboard", "Keyboard that don't need a wire", 59.99f));
 
     }
-
+    private Product selectedProduct;
     public Vector<Product> getAllProducts() {
         return products;
     }
@@ -23,6 +23,14 @@ public class Data {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public void setSelectedProduct(Product p) {
+        selectedProduct = p;
+    }
+
+    public Product getSelectedProduct() {
+        return selectedProduct;
     }
 }
 

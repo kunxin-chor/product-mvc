@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class Panel2View {
     private JLabel textOutput;
-    private JComboBox<Product> products;
+
     private Controller controller;
     private JPanel page1;
     public Panel2View(JFrame parentFrame, Controller controller, MasterView mv) {
@@ -21,10 +21,7 @@ public class Panel2View {
         textOutput.setBounds(50,50, 150,20);
         page1.add(textOutput);//adding button in JFrame
 
-        // add products
-        products = new JComboBox<>(controller.getProducts());
-        products.setBounds(50, 50,90,20);
-        page1.add(products);
+
 
         // Add panel to the parent
         parentFrame.add(page1);
@@ -44,4 +41,7 @@ public class Panel2View {
         page1.setVisible(true);
     }
 
+    public void hide() {
+        page1.setVisible(false);
+    }
 }
